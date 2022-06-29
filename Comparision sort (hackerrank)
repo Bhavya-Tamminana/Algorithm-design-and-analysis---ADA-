@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() 
+{
+    int i,j,n,array[1000000];
+    int count[100]={0};
+    scanf("%d",&n);
+    for(i=0;i<n;i++)
+    {
+        scanf("%d",&array[i]);
+        count[array[i]]++;
+    }
+    for(i=0;i<100;i++)
+    {
+        printf("%d ",count[i]);
+    }
+    return 0;
+}
